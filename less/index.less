@@ -1,0 +1,97 @@
+@import "reset.less";
+
+html,body {
+    
+    // background-color: red;
+
+}
+// navigation styles
+.body-container{
+    max-width: 1000px;
+    margin: 0 auto;
+    .nav-header{
+        background-image: url(../imgs/stefan-vladimirov-Q_Moi2xjieU-unsplash.jpg);
+        background-size:50%;
+        opacity: 0.8;
+        .nav-wrapper{
+            background: rgba(255,255,255,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 1em;
+            padding: 1em;
+            .nav-logo {
+                width:25%;
+                display: flex;
+                align-items: center;
+
+                img {
+                    width:15%;
+                }
+
+                h1 {
+                    text-align: center;
+                    font-size: 1.5em;
+                    color: white;
+                    
+                    
+                }
+            }
+            nav {
+                a {
+                    text-decoration: none;
+                    color: white;
+                    margin: 0.5em;
+                    padding: 0.5em;
+                    
+                }
+            }
+        }
+        .header-wrapper {
+            margin: 1em;
+            padding: 1em;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        
+            .header-left {
+                margin: 1em;
+                padding: 1em;
+                p {
+                    color:white;
+                    font-size: 1.5em;
+                }
+            }
+            .header-form {
+                background-color: white;
+                border-radius: 0.5em;
+                margin: 1em;
+                padding: 1em;
+                h2 {
+                    font-weight: bold;
+                    font-size: 1.5em;
+                }
+                form{
+                    color: maroon;
+                    line-height: 1.5em;
+                    text-align: center;
+                    input {
+                        height: 2em;
+                        border-radius: 0.3em;
+                    }
+                    button {
+                        height: 2.5em;
+                        border-radius: 0.3em;
+                        margin: 0.3em;
+                        padding: 0.3em;
+                        width:50%;
+                        color:white;
+                        background-color: maroon;
+
+                    }
+                }
+            }
+            
+        }
+    }
+}
