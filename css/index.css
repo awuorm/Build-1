@@ -145,7 +145,7 @@ table {
   padding: 1em;
   margin-top: 0;
   margin-left: 0;
-  margin-right: 0;
+  margin-right: 0.5em;
   width: 100%;
 }
 .body-container .nav-header .nav-wrapper .nav-logo {
@@ -429,7 +429,7 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 349px;
+  height: 358px;
 }
 .cities-body-container .cities-nav-header .cities-header-wrapper .form-container .cities-form {
   background-color: white;
@@ -438,7 +438,6 @@ table {
 .cities-body-container .cities-nav-header .cities-header-wrapper .form-container .cities-form input {
   margin: 0.3em;
   padding: 0.3em;
-  color: maroon;
   font-size: 1em;
   text-align: center;
   width: 18%;
