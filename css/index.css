@@ -127,7 +127,7 @@ table {
   border-spacing: 0;
 }
 .body-container {
-  max-width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .body-container .nav-header {
@@ -379,7 +379,7 @@ table {
   padding: 1em;
 }
 .cities-body-container {
-  max-width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .cities-body-container .cities-nav-header {
@@ -433,26 +433,26 @@ table {
 }
 .cities-body-container .cities-nav-header .cities-header-wrapper .form-container .cities-form {
   background-color: white;
-  width: 75%;
+  width: 85%;
 }
 .cities-body-container .cities-nav-header .cities-header-wrapper .form-container .cities-form input {
-  margin: 0.5em;
-  padding: 0.5em;
-  margin-right: 0;
-  padding-right: 0;
+  margin: 0.3em;
+  padding: 0.3em;
   color: maroon;
   font-size: 1em;
   text-align: center;
+  width: 18%;
 }
 .cities-body-container .cities-nav-header .cities-header-wrapper .form-container .cities-form button {
-  margin: 0.5em;
-  padding: 0.5em;
+  margin: 0.3em;
+  padding: 0.3em;
   background-color: maroon;
   opacity: 0.8;
   border: none;
   color: white;
   font-size: 1em;
   text-align: center;
+  width: 12%;
 }
 .cities-body-container h2 {
   background-color: maroon;
