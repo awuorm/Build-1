@@ -150,7 +150,7 @@ table {
   justify-content: center;
 }
 .body-container .nav-header .nav-wrapper .nav-logo img {
-  width: 15%;
+  width: 20%;
 }
 .body-container .nav-header .nav-wrapper .nav-logo h1 {
   text-align: center;
@@ -196,10 +196,12 @@ table {
 }
 .body-container .nav-header .header-wrapper .header-form form input {
   height: 2em;
+  border: 0.1em solid maroon;
   border-radius: 0.3em;
 }
 .body-container .nav-header .header-wrapper .header-form form button {
   height: 2.5em;
+  border: none;
   border-radius: 0.3em;
   margin: 0.3em;
   padding: 0.3em;
@@ -298,4 +300,76 @@ table {
 .body-container .main-mid-wrapper .img-wrapper-3 #img-3:hover + #hidden-p3 {
   opacity: 0.8;
   visibility: visible;
+}
+.body-container .main-bot-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.body-container .main-bot-wrapper section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1em;
+  padding: 1em;
+}
+.body-container .main-bot-wrapper section p {
+  color: maroon;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  text-align: center;
+}
+.body-container .main-bot-wrapper section button {
+  margin: 0.8em;
+  padding: 0.8em;
+  text-align: center;
+  background-color: maroon;
+  opacity: 0.8;
+  color: white;
+  border: none;
+  border-radius: 0.3em;
+}
+.body-container footer {
+  background-color: maroon;
+  opacity: 0.8;
+  width: 100%;
+}
+.body-container footer .footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.body-container footer .footer-nav .footer-logo {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.body-container footer .footer-nav .footer-logo img {
+  width: 15%;
+}
+.body-container footer .footer-nav .footer-logo h1 {
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+}
+.body-container footer .footer-nav nav {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  padding: 1em;
+}
+.body-container footer .footer-nav nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+.body-container footer h3 {
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  margin: 1em;
+  padding: 1em;
 }

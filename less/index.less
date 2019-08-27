@@ -21,7 +21,7 @@
                 .myFlexMixin(center,center);
 
                 img {
-                    width:15%;
+                    width:20%;
                 }
 
                 h1 {
@@ -67,10 +67,12 @@
                     text-align: center;
                     input {
                         height: 2em;
+                        border: 0.1em solid maroon;
                         border-radius: 0.3em;
                     }
                     button {
                         height: 2.5em;
+                        border: none;
                         border-radius: 0.3em;
                         .myMarginMixin(0.3em,0.3em);
                         width:50%;
@@ -194,8 +196,80 @@
                         
         
     }
-       
 
+    .main-bot-wrapper {
+        .myFlexMixin(center,space-between);
+        section{
+            .myFlexMixin(center,center);
+            flex-direction: column;
+            .myMarginMixin(1em,1em);
+
+            p{
+                color:maroon;
+                font-size: 1.2em;
+                line-height:1.2em;
+                text-align: center;
+            }
+            button {
+                .myMarginMixin(0.8em,0.8em);
+                text-align: center;
+                background-color: maroon;
+                opacity:0.8;
+                color: white;
+                border: none;
+                border-radius: 0.3em;
+
+            }
+        }
+       
+    }
+       
+    footer {
+        background-color: maroon;
+        opacity: 0.8;
+        width: 100%;
+    
+
+        .footer-nav {
+            .myFlexMixin(center,space-evenly);
+            .footer-logo {
+                width:25%;
+                .myFlexMixin(center,center);
+
+                img {
+                    width:15%;
+                }
+                h1{
+                    text-align: center;
+                    font-size: 1.5em;
+                    color: white;  
+                }
+
+            }
+
+            nav{
+                display: flex;
+                flex-direction: column;
+                .myMarginMixin(1em,1em);
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1em;
+                    line-height: 1.5em;
+                    
+                
+                }
+            }
+        }
+        h3 {
+            color: white;
+            font-size: 1em;
+            text-align: center;
+            .myMarginMixin(1em,1em);
+        }
+
+    }
     
     
 }
