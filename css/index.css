@@ -134,6 +134,7 @@ table {
   background-image: url(../imgs/stefan-vladimirov-Q_Moi2xjieU-unsplash.jpg);
   background-size: 50%;
   opacity: 0.8;
+  height: 480px;
 }
 .body-container .nav-header .nav-wrapper {
   background: rgba(255, 255, 255, 0.2);
@@ -142,6 +143,10 @@ table {
   justify-content: space-between;
   margin: 1em;
   padding: 1em;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
 }
 .body-container .nav-header .nav-wrapper .nav-logo {
   width: 25%;
@@ -150,7 +155,7 @@ table {
   justify-content: center;
 }
 .body-container .nav-header .nav-wrapper .nav-logo img {
-  width: 20%;
+  width: 15%;
 }
 .body-container .nav-header .nav-wrapper .nav-logo h1 {
   text-align: center;
@@ -367,6 +372,212 @@ table {
   line-height: 1.5em;
 }
 .body-container footer h3 {
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  margin: 1em;
+  padding: 1em;
+}
+.cities-body-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.cities-body-container .cities-nav-header {
+  background-image: url(../imgs/kyler-boone-DrnOxsTcUMg-unsplash.jpg);
+  background-size: 50%;
+  opacity: 0.8;
+  height: 480px;
+}
+.cities-body-container .cities-nav-header .cities-nav-wrapper {
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1em;
+  padding: 1em;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+.cities-body-container .cities-nav-header .cities-nav-wrapper .cities-nav-logo {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cities-body-container .cities-nav-header .cities-nav-wrapper .cities-nav-logo img {
+  width: 15%;
+}
+.cities-body-container .cities-nav-header .cities-nav-wrapper .cities-nav-logo h1 {
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+}
+.cities-body-container .cities-nav-header .cities-nav-wrapper nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+.cities-body-container .cities-nav-header .cities-header-wrapper {
+  margin: 1em;
+  padding: 1em;
+  margin-bottom: 0;
+}
+.cities-body-container .cities-nav-header .cities-header-wrapper .form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 349px;
+}
+.cities-body-container .cities-nav-header .cities-header-wrapper .form-container .cities-form {
+  background-color: white;
+  width: 75%;
+}
+.cities-body-container .cities-nav-header .cities-header-wrapper .form-container .cities-form input {
+  margin: 0.5em;
+  padding: 0.5em;
+  margin-right: 0;
+  padding-right: 0;
+  color: maroon;
+  font-size: 1em;
+  text-align: center;
+}
+.cities-body-container .cities-nav-header .cities-header-wrapper .form-container .cities-form button {
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: maroon;
+  opacity: 0.8;
+  border: none;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+}
+.cities-body-container h2 {
+  background-color: maroon;
+  opacity: 0.8;
+  color: white;
+  font-size: 1.2em;
+  margin: 0.8em;
+  padding: 0.8em;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+}
+.cities-body-container .cities-main-wrapper .cities-main-top-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cities-body-container .cities-main-wrapper .cities-main-top-wrapper .cities-main-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+.cities-body-container .cities-main-wrapper .cities-main-top-wrapper .cities-main-left img {
+  width: 50%;
+  height: 100%;
+  border-radius: 1em;
+}
+.cities-body-container .cities-main-wrapper .cities-main-top-wrapper .cities-main-left p {
+  width: 50;
+  line-break: auto;
+  line-height: 1.2em;
+  color: maroon;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+.cities-body-container .cities-main-wrapper .cities-main-top-wrapper .cities-main-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+.cities-body-container .cities-main-wrapper .cities-main-top-wrapper .cities-main-right img {
+  width: 50%;
+  height: 100%;
+  border-radius: 1em;
+}
+.cities-body-container .cities-main-wrapper .cities-main-top-wrapper .cities-main-right p {
+  width: 50;
+  line-break: auto;
+  line-height: 1.2em;
+  color: maroon;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+.cities-body-container .cities-main-wrapper .cities-main-bot-wrapper {
+  margin: 1em;
+  padding: 1em;
+  background-image: url(../imgs/table_glasses.jpg);
+  background-size: 100%;
+  opacity: 0.8;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cities-body-container .cities-main-wrapper .cities-main-bot-wrapper form input {
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+  font-size: 1em;
+}
+.cities-body-container .cities-main-wrapper .cities-main-bot-wrapper button {
+  margin: 0.7em;
+  padding: 0.7em;
+  text-align: center;
+  background-color: white;
+  font-size: 1em;
+  border: none;
+  color: maroon;
+}
+.cities-body-container .cities-main-wrapper .cities-main-bot-wrapper h2 {
+  color: white;
+  font-size: 1.2em;
+}
+.cities-body-container .cities-footer-wrapper {
+  background-color: maroon;
+  opacity: 0.8;
+  width: 100%;
+}
+.cities-body-container .cities-footer-wrapper .cities-footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.cities-body-container .cities-footer-wrapper .cities-footer-nav .cities-footer-logo {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cities-body-container .cities-footer-wrapper .cities-footer-nav .cities-footer-logo img {
+  width: 15%;
+}
+.cities-body-container .cities-footer-wrapper .cities-footer-nav .cities-footer-logo h1 {
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+}
+.cities-body-container .cities-footer-wrapper .cities-footer-nav nav {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  padding: 1em;
+}
+.cities-body-container .cities-footer-wrapper .cities-footer-nav nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+.cities-body-container .cities-footer-wrapper h3 {
   color: white;
   font-size: 1em;
   text-align: center;
