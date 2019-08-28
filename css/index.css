@@ -127,13 +127,13 @@ table {
   border-spacing: 0;
 }
 .body-container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
+  font-family: 'Livvic', sans-serif;
 }
 .body-container .nav-header {
-  background-image: url(../imgs/stefan-vladimirov-Q_Moi2xjieU-unsplash.jpg);
-  background-size: 50%;
-  opacity: 0.8;
+  background-image: url(../imgs/eiliv-sonas-aceron-ZuIDLSz3XLg-unsplash.jpg);
+  background-size: 100%;
   height: 480px;
 }
 .body-container .nav-header .nav-wrapper {
@@ -219,7 +219,6 @@ table {
   align-items: baseline;
   justify-content: space-between;
   background-color: maroon;
-  opacity: 0.8;
 }
 .body-container .main-top-wrapper section {
   margin: 0.5em;
@@ -330,14 +329,12 @@ table {
   padding: 0.8em;
   text-align: center;
   background-color: maroon;
-  opacity: 0.8;
   color: white;
   border: none;
   border-radius: 0.3em;
 }
 .body-container footer {
   background-color: maroon;
-  opacity: 0.8;
   width: 100%;
 }
 .body-container footer .footer-nav {
@@ -379,13 +376,13 @@ table {
   padding: 1em;
 }
 .cities-body-container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
+  font-family: 'Livvic', sans-serif;
 }
 .cities-body-container .cities-nav-header {
   background-image: url(../imgs/kyler-boone-DrnOxsTcUMg-unsplash.jpg);
-  background-size: 50%;
-  opacity: 0.8;
+  background-size: 100%;
   height: 480px;
 }
 .cities-body-container .cities-nav-header .cities-nav-wrapper {
@@ -446,7 +443,6 @@ table {
   margin: 0.3em;
   padding: 0.3em;
   background-color: maroon;
-  opacity: 0.8;
   border: none;
   color: white;
   font-size: 1em;
@@ -455,7 +451,6 @@ table {
 }
 .cities-body-container h2 {
   background-color: maroon;
-  opacity: 0.8;
   color: white;
   font-size: 1.2em;
   margin: 0.8em;
@@ -513,7 +508,6 @@ table {
   padding: 1em;
   background-image: url(../imgs/table_glasses.jpg);
   background-size: 100%;
-  opacity: 0.8;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 0;
@@ -531,10 +525,11 @@ table {
   margin: 0.7em;
   padding: 0.7em;
   text-align: center;
-  background-color: white;
+  background-color: maroon;
   font-size: 1em;
   border: none;
-  color: maroon;
+  color: white;
+  border-radius: 0.5em;
 }
 .cities-body-container .cities-main-wrapper .cities-main-bot-wrapper h2 {
   color: white;
@@ -542,7 +537,6 @@ table {
 }
 .cities-body-container .cities-footer-wrapper {
   background-color: maroon;
-  opacity: 0.8;
   width: 100%;
 }
 .cities-body-container .cities-footer-wrapper .cities-footer-nav {
