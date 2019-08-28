@@ -1,8 +1,8 @@
 @import "reset.less";
 @import "variables.less";
-// @import url('https://fonts.googleapis.com/css?family=Livvic&display=swap');
 
-// navigation styles
+
+// index.html styles
 .body-container{
     max-width: 100%;
      margin:0 8%;
@@ -23,11 +23,9 @@
             width:100%;
 
             @media @tablet {
-                .myFlexMixin(center,space-between);
                 flex-direction: column;
             }
             @media @mobile {
-                .myFlexMixin(center,space-between);
                 flex-direction: column;
             }
 
@@ -52,13 +50,13 @@
                     text-align: center;
                     font-size: 1.5em;
                     color: white;
-                    width:15%;
-                    @media @tablet {
-                         font-size: 1em;
-                    }
-                    @media @mobile { 
-                        font-size: 1em;
-                    } 
+                    
+                    // @media @tablet {
+                    //      font-size: 1em;
+                    // }
+                    // @media @mobile { 
+                    //     font-size: 1em;
+                    // } 
                     
                 }
             }
@@ -80,18 +78,12 @@
                     text-decoration: none;
                     color: white;
                     .myMarginMixin(0.5em, 0.5em);
-                    width:15%;
-
-                    @media @tablet {
+                     @media @tablet {
                         .myMarginMixin(0.2em, 0.2em);
-                        text-align: center;
-                        font-size: 1em;
                     }
                    
-                    @media @mobile {
+                     @media @mobile {
                         .myMarginMixin(0, 0);
-                        text-align: center;
-                        font-size: 1em;
                     }
                 
                 }
@@ -350,8 +342,12 @@
                 h1{
                     text-align: center;
                     font-size: 1.5em;
-                    color: white;  
+                    color: white;
+
                     @media @tablet {
+                        font-size: 1em;
+                    }
+                    @media @mobile {
                         font-size: 1em;
                     }
                 }
@@ -387,17 +383,17 @@
 
 // Cities styles
 // navigation styles
-.cities-body-container{
-    max-width: 1000px;
-    margin: 0 auto;
+.cities-body-container {
+    max-width: 100%;
+     margin:0 8%;
     font-family: 'Livvic', sans-serif;
-
-    .cities-nav-header{
+  
+    .cities-nav-header {
         background-image: url(../imgs/kyler-boone-DrnOxsTcUMg-unsplash.jpg);
         background-size:100%;
-        height:480px;
+        width:100%;
 
-        .cities-nav-wrapper{
+        .cities-nav-wrapper {
             background: rgba(255,255,255,0.2);
             .myFlexMixin(center,space-between);
             .myMarginMixin(1em,1em);
@@ -406,9 +402,27 @@
             margin-right:0;
             width:100%;
 
+            @media @tablet {
+                flex-direction: column;
+            }
+            @media @mobile {
+                flex-direction: column;
+            }
+
             .cities-nav-logo {
                 width:25%;
                 .myFlexMixin(center,center);
+
+                @media @tablet {
+                    .myFlexMixin(center,center);
+                    flex-direction: column;
+                    width:50%;   
+                }
+                @media @mobile { 
+                .myFlexMixin(center,center); 
+                flex-direction: column;
+                width:50%;
+                }
 
                 img {
                     width:15%;
@@ -423,30 +437,79 @@
                 }
             }
             nav {
+
+                @media @tablet {
+                    .myFlexMixin(center,space-between);
+                    flex-direction: column;
+                    .myMarginMixin(0, 0);
+                }
+               
+                @media @mobile {
+                    .myFlexMixin(center,space-between);
+                    flex-direction: column;
+                    .myMarginMixin(0, 0);
+                }
+
                 a {
                     text-decoration: none;
                     color: white;
-                    .myMarginMixin(0.5em, 0.5em);   
+                    .myMarginMixin(0.5em, 0.5em);
+
+                    @media @tablet {
+                        .myMarginMixin(0.2em, 0.2em);
+                    }
+                   
+                    @media @mobile {
+                        .myMarginMixin(0, 0);
+                    } 
                 }
             }
         }
-        .cities-header-wrapper {
-            .myMarginMixin(1em,1em);
-            margin-bottom: 0;
-            .form-container {
-                   .myFlexMixin(center,center);
-                   height:358px;
-                
-                .cities-form {
-                    background-color: white;
-                    width:85%;
-                    
+    }
+
+    .cities-header-wrapper {
+        .myMarginMixin(1em,1em);
+        margin-bottom: 0;
+
+        .form-container {
+            .myFlexMixin(center,center);
+            height:358px;
+           
+            
+            .cities-form {
+                background-color: white;
+                width:85%;
+                border-radius: 0.5em;
+
+                form {
+                    width:100%;
+                    .myFlexMixin(center,space-evenly);
+
+                    @media @tablet {
+                        .myFlexMixin(center,space-between);
+                        flex-direction: column;
+                    }
+
+                    @media @mobile {
+                        .myFlexMixin(center,space-between);
+                        flex-direction: column;
+                    }
+
                     input {
                         .myMarginMixin(0.3em,0.3em);
                         font-size: 1em;
                         text-align: center;
-                        width:18%;
+                        width:20%;
+
+                         @media @tablet {
+                            width:90%;
+                        }
+
+                        @media @mobile {
+                            width:90%;
+                        }
                     }
+
                     button {
                         .myMarginMixin(0.3em,0.3em);
                         background-color: maroon;
@@ -454,16 +517,25 @@
                         color:white;
                         font-size:1em; 
                         text-align: center;
-                        width:12%;
+                        width:20%;
+                        border-radius: 0.5em;
+                    
+                        @media @tablet {
+                            width:30%;
+                        }
+                        @media @mobile {
+                            width:30%;
+                        }
                     }
                 }
-            
+
             }
-        }   
+    
+        }
+    
+    } 
 
-
-    }
-    h2 {
+    .cities-h2 {
         background-color: maroon;
         color:white;
         font-size: 1.2em;
@@ -474,19 +546,49 @@
         // width:10%;
         text-align: center
         }
+
     .cities-main-wrapper { 
+
         .cities-main-top-wrapper {
             .myFlexMixin(center,space-between);
+
+            @media @tablet {
+                flex-direction: column;
+            }
+
+            @media @mobile {
+                flex-direction: column;
+            }
+
             .cities-main-left {
                 .myFlexMixin(center,space-between);
                 width:50%;
+                .myMarginMixin(0.5em,0.5em);
+
+                @media @tablet {
+                    width:100%;
+                }
+
+                @media @mobile {
+                    flex-direction: column;
+                    width:100%;
+                }
+
                 img {
                     width:50%; 
                     height: 100%;
                     border-radius: 1em;
+
+                    @media @tablet {
+                        width:50%;
+                    }
+    
+                    @media @mobile {
+                        width:100%;
+                    }
                 }
+
                 p {
-                    width: 50;
                     line-break: auto;
                     line-height: 1.2em;
                     color:maroon;
@@ -497,11 +599,31 @@
             .cities-main-right {
                 .myFlexMixin(center,space-between);
                 width:50%;
-                img {
-                width: 50%;
-                height: 100%;
-                border-radius: 1em;
+                .myMarginMixin(0.5em,0.5em);
+
+                @media @tablet {
+                    width:100%;
                 }
+
+                @media @mobile {
+                    flex-direction: column;
+                    width:100%;
+                }
+
+                img {
+                    width: 50%;
+                    height: 100%;
+                    border-radius: 1em;
+                    
+                    @media @tablet {
+                        width:50%;
+                    }
+
+                    @media @mobile {
+                        width:100%;
+                    }
+                }
+
                 p {
                     width: 50;
                     line-break: auto;
@@ -519,16 +641,32 @@
             margin-right: 0;
             margin-bottom: 0;
             .myFlexMixin(center,center);
+
+            @media @tablet {
+                flex-direction: column;
+            }
+
+            @media @mobile {
+                flex-direction: column;
+            }
+
             form {
+                .myFlexMixin(center,center);
                 input{
                     .myMarginMixin(1em,1em);
                     text-align: center;
                     font-size: 1em;
+                    border-radius: 0.5em;
+                    
+                    @media @tablet {
+                        width:50%;
+
+                    }
                     
                 }
             }
             button {
-                .myMarginMixin(0.7em,0.7em);
+                .myMarginMixin(1em,1em);
                 text-align: center;
                 background-color: maroon;
                 font-size: 1em;
@@ -548,12 +686,20 @@
         background-color: maroon;
         width: 100%;
     
-
         .cities-footer-nav {
             .myFlexMixin(center,space-evenly);
+
             .cities-footer-logo {
                 width:25%;
                 .myFlexMixin(center,center);
+
+                @media @tablet {
+                    flex-direction: column;
+                }
+
+                @media @mobile {
+                   display: none;
+                }
 
                 img {
                     width:15%;
@@ -561,7 +707,14 @@
                 h1{
                     text-align: center;
                     font-size: 1.5em;
-                    color: white;  
+                    color: white; 
+
+                    @media @tablet {
+                        font-size: 1em;
+                    }
+                    @media @mobile {
+                        font-size: 1em;
+                    } 
                 }
 
             }
@@ -589,183 +742,5 @@
         }
 
     }
-
-      
-    //     // section {
-    //     // //  .myFlexMixin(center,space-between);
-    //     //     .myMarginMixin(0.5em,0.5em);
-    //     //     line-height: 1.25em;
-    //     // // border:0.2em dashed white;
-    //     // // background-color: white;
-
-
-           
-    //     //     h2 {
-    //     //         font-size: 1.25em;
-    //     //         color: maroon;
-    //     //         background-color: white;
-    //     //         border-radius: 0.5em;
-    //     //         .myMarginMixin(0.5em,0.5em);
-    //     //         width: 50%;
-    //     //     }
-    //     //     h3{
-    //     //         color: white;
-    //     //         font-size: 1.15em;
-    //     //     }
-    //     //     p {
-    //     //         font-size: 1em;
-    //     //         color: white;
-    //     //         line-height: 1.5em;
-    //     //     }
-    //     // }
-
-
-    // .header-2 {
-    //     background-color: white;
-    //     opacity: 0.8;
-    //     color:maroon;
-    //     h2{
-    //     .myMarginMixin(0.3em,0.3em);
-    //     font-weight: bold;
-    //     font-size: 1.5em;
-    //     text-align: center;
-
-    //     }
-    // }
-    // .main-mid-wrapper {
-    //     .myFlexMixin(baseline,space-between);
-    //     cursor: pointer;
-    //     .img-wrapper-1  {
-    //         display: inline-flex;
-    //         position: relative;
-    //         #img-1{
-    //         width: 100%;
-    //         // .myMarginMixin(0.5em,0.5em);
-    //         // border-radius: 10px;
-    //         }
-    
-    //         #hidden-p {
-    //             position: absolute;
-    //             top: 50%;
-    //             width: 100%;
-    //             color: white;
-    //             font-size: 2em;
-    //             text-align: center;
-    //             opacity: 1;
-    //             visibility: hidden;
-    //             transition: 0.5s;
-    //         }
-
-    //         #img-1:hover + #hidden-p {
-    //             opacity: 0.8;
-    //             visibility: visible;
-                
-    //         }
-            
-    //     }
-    //     .img-wrapper-3  { 
-    //         display:inline-flex;
-    //         position:relative;
-    //         #img-3{
-    //         width:100%;
-    //         // .myMarginMixin(0.5em,0.5em);
-    //         // border-radius: 10px;
-    //         }
-    //         #hidden-p3 {
-    //             position:absolute;
-    //             top:50%;
-    //             width:100%;
-    //             color: white;
-    //             font-size: 2em;
-    //             text-align:center;
-    //             opacity:1;
-    //             visibility: hidden;
-    //             transition: 0.5s;
-    //         }
-    //         #img-3:hover + #hidden-p3 {
-    //             opacity: 0.8;
-    //             visibility: visible;
-                
-    //         }
-            
-    //     }
-                        
-        
-    // }
-
-    // .main-bot-wrapper {
-    //     .myFlexMixin(center,space-between);
-    //     section{
-    //         .myFlexMixin(center,center);
-    //         flex-direction: column;
-    //         .myMarginMixin(1em,1em);
-
-    //         p{
-    //             color:maroon;
-    //             font-size: 1.2em;
-    //             line-height:1.2em;
-    //             text-align: center;
-    //         }
-    //         button {
-    //             .myMarginMixin(0.8em,0.8em);
-    //             text-align: center;
-    //             background-color: maroon;
-    //             opacity:0.8;
-    //             color: white;
-    //             border: none;
-    //             border-radius: 0.3em;
-
-    //         }
-    //     }
-       
-    // }
-       
-    // footer {
-    //     background-color: maroon;
-    //     opacity: 0.8;
-    //     width: 100%;
-    
-
-    //     .footer-nav {
-    //         .myFlexMixin(center,space-evenly);
-    //         .footer-logo {
-    //             width:25%;
-    //             .myFlexMixin(center,center);
-
-    //             img {
-    //                 width:15%;
-    //             }
-    //             h1{
-    //                 text-align: center;
-    //                 font-size: 1.5em;
-    //                 color: white;  
-    //             }
-
-    //         }
-
-    //         nav{
-    //             display: flex;
-    //             flex-direction: column;
-    //             .myMarginMixin(1em,1em);
-
-    //             a {
-    //                 text-decoration: none;
-    //                 color: white;
-    //                 font-size: 1em;
-    //                 line-height: 1.5em;
-                    
-                
-    //             }
-    //         }
-    //     }
-    //     h3 {
-    //         color: white;
-    //         font-size: 1em;
-    //         text-align: center;
-    //         .myMarginMixin(1em,1em);
-    //     }
-
-    // }
-    
-    
+   
 }
