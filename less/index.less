@@ -116,6 +116,16 @@ html {
                         font-size: 1.5em;
                         line-height:1.2em;
 
+                        @media @tablet {
+                            background-color: @bg-color;
+                            color: white;
+                            font-size: 1.3em;
+                            .myMarginMixin(1em,1em);
+                            line-height:1.2em;
+                            border-radius: 0.5em;
+                            
+                        }
+                        
                         @media @mobile {
                             background-color: @bg-color;
                             color: white;
@@ -338,6 +348,14 @@ html {
                 flex-direction: column;
                 .myMarginMixin(1em,1em);
 
+                figure {
+                    .myFlexMixin(center,center);
+
+                    img {
+                        width:50%;
+                    }
+                }
+                
                 p{
                     color: @font-color;
                     font-size: 1.2em;
