@@ -611,6 +611,7 @@ html .body-container footer h3 {
   text-align: center;
   margin: 1em;
   padding: 1em;
+  margin-bottom: 0%;
 }
 html .cities-body-container {
   max-width: 100%;
@@ -1016,4 +1017,5 @@ html .cities-body-container .cities-footer-wrapper h3 {
   text-align: center;
   margin: 1em;
   padding: 1em;
+  margin-bottom: 0%;
 }
