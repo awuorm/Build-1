@@ -37,15 +37,13 @@ html {
                     .myFlexMixin(center,flex-start);
 
                     @media @tablet {
-                        .myFlexMixin(center,center);
-                        flex-direction: column;
-                        width:50%;   
+                        .myFlexMixin(center,flex-start);
+                        width: 40%;   
                     }
 
                     @media @mobile { 
-                    .myFlexMixin(center,center); 
-                    flex-direction: column;
-                    width:50%;
+                    .myFlexMixin(center,flex-start); 
+                     width:40%;
                     }
 
                     img {
@@ -56,7 +54,15 @@ html {
                         text-align: center;
                         font-size: 1.5em;
                         color: white;
-                        width:15%;  
+                        width:15%;
+                        
+                        @media @tablet {
+                            font-size: 1em;
+                        }
+
+                        @media @mobile {
+                            font-size: 1em;
+                        }
                     }
                 }
             
@@ -273,7 +279,7 @@ html {
                         -webkit-filter: drop-shadow(-4px 5px 5px rgba(0,0,0,0.6));
                         filter: drop-shadow(-4px 5px 5px rgba(0,0,0,0.6));
                         height:200px;
-                        // width:100%;
+                        border-radius: 0.5em;
                         animation: image-slide 4s cubic-bezier(.5,.5,0,1);
                         animation-fill-mode: forwards;
                         
@@ -471,15 +477,13 @@ html {
                     .myFlexMixin(center,flex-start);
 
                     @media @tablet {
-                        .myFlexMixin(center,center);
-                        flex-direction: column;
-                        width:50%;   
+                        .myFlexMixin(center,flex-start);
+                        width: 40%;   
                     }
 
                     @media @mobile { 
-                    .myFlexMixin(center,center); 
-                    flex-direction: column;
-                    width:50%;
+                    .myFlexMixin(center,flex-start); 
+                     width:40%;
                     }
 
                     img {
@@ -490,7 +494,15 @@ html {
                         text-align: center;
                         font-size: 1.5em;
                         color: white;
-                        width:15%;    
+                        width:15%; 
+                        
+                        @media @tablet {
+                            font-size: 1em;
+                        }
+
+                        @media @mobile {
+                            font-size: 1em;
+                        }
                     }
                 }
 
