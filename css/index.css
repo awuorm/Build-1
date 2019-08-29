@@ -618,6 +618,18 @@ html .cities-body-container {
   margin: 0 8%;
   font-family: 'Livvic', sans-serif;
 }
+@media (max-width:800px) {
+  html .cities-body-container {
+    max-width: 100%;
+    margin: 0%;
+  }
+}
+@media (max-width:500px) {
+  html .cities-body-container {
+    max-width: 100%;
+    margin: 0%;
+  }
+}
 html .cities-body-container .cities-nav-header {
   background-image: url(../imgs/kyler-boone-DrnOxsTcUMg-unsplash.jpg);
   background-size: 100%;
