@@ -114,11 +114,17 @@ html {
                     @media @tablet {
                         .myFlexMixin(center,space-evenly);
                         flex-direction: column;
+                        .myMarginMixin(0,0);
+                        width:100%;
+                        // background-color: @bg-color;
                     }
 
                     @media @mobile {
-                        .myFlexMixin(center,space-evenly);
+                        .myFlexMixin(center,space-between);
                         flex-direction: column;
+                        .myMarginMixin(0,0);
+                        width:100%;
+                        background-color: @bg-color;
                     }
 
                     .header-left {
@@ -130,12 +136,13 @@ html {
                             line-height:1.2em;
 
                             @media @tablet {
-                                background-color: @bg-color;
+                                // background-color: @bg-color;
                                 color: white;
-                                font-size: 1.3em;
-                                .myMarginMixin(1em,1em);
-                                line-height:1.2em;
+                                font-size: 1.2em;
+                                .myMarginMixin(0.5em,0.5em);
+                                line-height:1em;
                                 border-radius: 0.5em;
+                                
                                 
                             }
                             
@@ -143,7 +150,7 @@ html {
                                 background-color: @bg-color;
                                 color: white;
                                 font-size: 1.2em;
-                                .myMarginMixin(1em,1em);
+                                .myMarginMixin(0,0);
                                 line-height:1.2em;
                                 border-radius: 0.5em;
                                 
@@ -156,9 +163,26 @@ html {
                         border-radius: 0.5em;
                         .myMarginMixin(1em,1em);
 
+                        @media @tablet {
+                            .myMarginMixin(0.5em,0.5em);
+                        }
+
+                        @media @mobile {
+                            .myMarginMixin(0.5em,0.5em);
+                        }
+
                         h2 {
                             font-weight: bold;
                             font-size: 1.5em;
+
+                            @media @tablet {
+                                font-size: 1em;
+                                line-break: auto;
+                            }
+    
+                            @media @mobile {
+                                font-size: 1em;
+                            }
                         }
 
                         form{

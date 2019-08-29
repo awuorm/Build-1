@@ -261,14 +261,21 @@ html .outer-body-container .body-container .nav-header .header-wrapper {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
 }
 @media (max-width:500px) {
   html .outer-body-container .body-container .nav-header .header-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: maroon;
   }
 }
 html .outer-body-container .body-container .nav-header .header-wrapper .header-left {
@@ -282,12 +289,11 @@ html .outer-body-container .body-container .nav-header .header-wrapper .header-l
 }
 @media (max-width:800px) {
   html .outer-body-container .body-container .nav-header .header-wrapper .header-left p {
-    background-color: maroon;
     color: white;
-    font-size: 1.3em;
-    margin: 1em;
-    padding: 1em;
-    line-height: 1.2em;
+    font-size: 1.2em;
+    margin: 0.5em;
+    padding: 0.5em;
+    line-height: 1em;
     border-radius: 0.5em;
   }
 }
@@ -296,8 +302,8 @@ html .outer-body-container .body-container .nav-header .header-wrapper .header-l
     background-color: maroon;
     color: white;
     font-size: 1.2em;
-    margin: 1em;
-    padding: 1em;
+    margin: 0;
+    padding: 0;
     line-height: 1.2em;
     border-radius: 0.5em;
   }
@@ -308,9 +314,32 @@ html .outer-body-container .body-container .nav-header .header-wrapper .header-f
   margin: 1em;
   padding: 1em;
 }
+@media (max-width:800px) {
+  html .outer-body-container .body-container .nav-header .header-wrapper .header-form {
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+}
+@media (max-width:500px) {
+  html .outer-body-container .body-container .nav-header .header-wrapper .header-form {
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+}
 html .outer-body-container .body-container .nav-header .header-wrapper .header-form h2 {
   font-weight: bold;
   font-size: 1.5em;
+}
+@media (max-width:800px) {
+  html .outer-body-container .body-container .nav-header .header-wrapper .header-form h2 {
+    font-size: 1em;
+    line-break: auto;
+  }
+}
+@media (max-width:500px) {
+  html .outer-body-container .body-container .nav-header .header-wrapper .header-form h2 {
+    font-size: 1em;
+  }
 }
 html .outer-body-container .body-container .nav-header .header-wrapper .header-form form {
   color: maroon;
