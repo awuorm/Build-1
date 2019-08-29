@@ -10,6 +10,11 @@ html {
         max-width: 100%;
         margin:0 8%;
         font-family: 'Livvic', sans-serif;
+
+        @media @mobile {
+            max-width: 100%;
+            margin: 0;
+        }
         
         .nav-header{
             background-image: url(../imgs/eiliv-sonas-aceron-ZuIDLSz3XLg-unsplash.jpg);
@@ -114,6 +119,16 @@ html {
                     p {
                         color:white;
                         font-size: 1.5em;
+                        line-height:1.2em;
+
+                        @media @mobile {
+                            background-color: @bg-color;
+                            color: white;
+                            font-size: 1.2em;
+                            .myMarginMixin(1em,1em);
+                            line-height:1.2em;
+                            border-radius: 0.5em;
+                        }
                     }
                 }
 

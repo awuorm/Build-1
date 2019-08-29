@@ -134,6 +134,12 @@ html .body-container {
   margin: 0 8%;
   font-family: 'Livvic', sans-serif;
 }
+@media (max-width:500px) {
+  html .body-container {
+    max-width: 100%;
+    margin: 0;
+  }
+}
 html .body-container .nav-header {
   background-image: url(../imgs/eiliv-sonas-aceron-ZuIDLSz3XLg-unsplash.jpg);
   background-size: 100%;
@@ -264,6 +270,18 @@ html .body-container .nav-header .header-wrapper .header-left {
 html .body-container .nav-header .header-wrapper .header-left p {
   color: white;
   font-size: 1.5em;
+  line-height: 1.2em;
+}
+@media (max-width:500px) {
+  html .body-container .nav-header .header-wrapper .header-left p {
+    background-color: maroon;
+    color: white;
+    font-size: 1.2em;
+    margin: 1em;
+    padding: 1em;
+    line-height: 1.2em;
+    border-radius: 0.5em;
+  }
 }
 html .body-container .nav-header .header-wrapper .header-form {
   background-color: white;
