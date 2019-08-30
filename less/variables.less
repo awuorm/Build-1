@@ -1,0 +1,21 @@
+//mixins
+.myFlexMixin(@align, @justify) {
+    display: flex;
+    align-items: @align;
+    justify-content: @justify;
+}
+.myMarginMixin(@margin,@padding) {
+    margin: @margin;
+    padding: @padding;
+}
+
+//media queries
+@mobile:~"(max-width:500px)";
+@tablet:~"(max-width:800px)";
+
+//Color assignments
+@font-color: @maroon;
+@bg-color: @maroon;
+
+//colors
+@maroon: maroon;
